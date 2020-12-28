@@ -49,12 +49,12 @@ class TrackedAnalyticsParametersTest extends TestCase
     public function it_can_track_the_referer_header()
     {
         $request = new Request();
-        $request->headers->add(['Referer' => 'spatie.be']);
+        $request->headers->add(['Referer' => 'realtydev.be']);
 
         app(AnalyticsBag::class)->putFromRequest($request);
 
         $this->assertEquals([
-            'referer' => 'spatie.be',
+            'referer' => 'realtydev.be',
         ], session()->get(config('analytics-tracker.session_key')));
     }
 }

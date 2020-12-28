@@ -10,7 +10,7 @@ class AnalyticsTrackerTest extends TestCase
     /** @test */
     public function it_can_format_an_url_without_tracked_parameters()
     {
-        $url = 'https://spatie.be/';
+        $url = 'https://realtydev.be/';
 
         $formattedUrl = app(AnalyticsTracker::class)->decorateUrl($url);
 
@@ -24,9 +24,9 @@ class AnalyticsTrackerTest extends TestCase
             'utm_source' => 'https://laravel-news.com/',
         ]);
 
-        $formattedUrl = app(AnalyticsTracker::class)->decorateUrl('https://spatie.be/');
+        $formattedUrl = app(AnalyticsTracker::class)->decorateUrl('https://realtydev.be/');
 
-        $this->assertEquals('https://spatie.be/?utm_source=https%3A%2F%2Flaravel-news.com%2F', $formattedUrl);
+        $this->assertEquals('https://realtydev.be/?utm_source=https%3A%2F%2Flaravel-news.com%2F', $formattedUrl);
     }
 
     /** @test */
@@ -40,8 +40,8 @@ class AnalyticsTrackerTest extends TestCase
             'utm_source' => 'custom_source',
         ]);
 
-        $formattedUrl = app(AnalyticsTracker::class)->decorateUrl('https://spatie.be/');
+        $formattedUrl = app(AnalyticsTracker::class)->decorateUrl('https://realtydev.be/');
 
-        $this->assertEquals('https://spatie.be/?custom_source=https%3A%2F%2Flaravel-news.com%2F', $formattedUrl);
+        $this->assertEquals('https://realtydev.be/?custom_source=https%3A%2F%2Flaravel-news.com%2F', $formattedUrl);
     }
 }

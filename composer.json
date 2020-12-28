@@ -1,17 +1,17 @@
 {
-    "name": "spatie/laravel-analytics-tracker",
+    "name": "realtydev/laravel-analytics-tracker",
     "description": "Keeps track of the original UTM parameters",
     "keywords": [
-        "spatie",
+        "realtydev",
         "laravel-utm-forwarder"
     ],
-    "homepage": "https://github.com/spatie/laravel-utm-forwarder",
+    "homepage": "https://github.com/realtydev/laravel-utm-forwarder",
     "license": "MIT",
     "authors": [
         {
             "name": "Alex Vanderbist",
             "email": "alex.vanderbist@gmail.com",
-            "homepage": "https://spatie.be",
+            "homepage": "https://realtydev.be",
             "role": "Developer"
         }
     ],

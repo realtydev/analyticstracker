@@ -1,25 +1,25 @@
 # Keeps track of the original UTM (or other analytics) parameters
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/laravel-analytics-tracker.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-analytics-tracker)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/spatie/laravel-analytics-tracker/run-tests?label=tests)](https://github.com/spatie/laravel-analytics-tracker/actions?query=workflow%3Arun-tests+branch%3Amaster)
-[![Total Downloads](https://img.shields.io/packagist/dt/spatie/laravel-analytics-tracker.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-analytics-tracker)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/realtydev/laravel-analytics-tracker.svg?style=flat-square)](https://packagist.org/packages/realtydev/laravel-analytics-tracker)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/realtydev/laravel-analytics-tracker/run-tests?label=tests)](https://github.com/realtydev/laravel-analytics-tracker/actions?query=workflow%3Arun-tests+branch%3Amaster)
+[![Total Downloads](https://img.shields.io/packagist/dt/realtydev/laravel-analytics-tracker.svg?style=flat-square)](https://packagist.org/packages/realtydev/laravel-analytics-tracker)
 
 Cross domain analytics is hard. This package helps you to keep track of the visitor's original UTM parameters, referer header and other analytics parameters. You can then submit these parameters along with a form submission or add them to a link to another domain you track.
 
 ## Support us
 
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/laravel-utm-forwarder.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/laravel-utm-forwarder)
+[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/laravel-utm-forwarder.jpg?t=1" width="419px" />](https://realtydev.be/github-ad-click/laravel-utm-forwarder)
 
-We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
+We invest a lot of resources into creating [best in class open source packages](https://realtydev.be/open-source). You can support us by [buying one of our paid products](https://realtydev.be/open-source/support-us).
 
-We highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using. You'll find our address on [our contact page](https://spatie.be/about-us). We publish all received postcards on [our virtual postcard wall](https://spatie.be/open-source/postcards).
+We highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using. You'll find our address on [our contact page](https://realtydev.be/about-us). We publish all received postcards on [our virtual postcard wall](https://realtydev.be/open-source/postcards).
 
 ## Installation
 
 You can install the package via composer:
 
 ```bash
-composer require spatie/laravel-analytics-tracker
+composer require realtydev/laravel-analytics-tracker
 ```
 
 The package works via a middleware that needs to be added to the `web` stack in your `kernel.php` file. Make sure to register this middleware after the `StartSession` middleware.

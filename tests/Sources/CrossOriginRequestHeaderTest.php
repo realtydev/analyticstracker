@@ -23,8 +23,8 @@ class CrossOriginRequestHeaderTest extends TestCase
     {
         $request = new Request();
         $request->headers->set('Foo', 'bar');
-        $request->headers->set('HOST', 'spatie.be');
-        $request->headers->set('Referer', 'https://spatie.be/');
+        $request->headers->set('HOST', 'realtydev.be');
+        $request->headers->set('Referer', 'https://realtydev.be/');
 
         $this->assertNull((new CrossOriginRequestHeader($request))->get('foo'));
     }
