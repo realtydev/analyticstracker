@@ -1,5 +1,5 @@
 {
-    "name": "realtydev/AnalyticsTracker",
+    "name": "realtydev/analyticstracker",
     "description": "Keeps track of the original UTM parameters",
     "keywords": [
         "realtydev",
@@ -27,12 +27,12 @@
     },
     "autoload": {
         "psr-4": {
-            "realtydev\\AnalyticsTracker\\": "src"
+            "realtydev\\analyticstracker\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "realtydev\\AnalyticsTracker\\Tests\\": "tests"
+            "realtydev\\analyticstracker\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -47,7 +47,7 @@
     "extra": {
         "laravel": {
             "providers": [
-              "realtydev\\AnalyticsTracker\\AnalyticsTrackerServiceProvider"
+              "realtydev\\analyticstracker\\AnalyticsTrackerServiceProvider"
             ]
         }
     },
