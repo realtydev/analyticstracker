@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\AnalyticsTracker\Middleware;
+namespace realtydev\AnalyticsTracker\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
-use Spatie\AnalyticsTracker\AnalyticsBag;
+use realtydev\AnalyticsTracker\AnalyticsBag;
 
 class TrackAnalyticsParametersMiddleware
 {

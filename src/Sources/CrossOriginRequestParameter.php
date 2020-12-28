@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\AnalyticsTracker\Sources;
+namespace realtydev\AnalyticsTracker\Sources;
 
-use Spatie\AnalyticsTracker\Helpers\Request;
+use realtydev\AnalyticsTracker\Helpers\Request;
 
 class CrossOriginRequestParameter extends RequestParameter
 {

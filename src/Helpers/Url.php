@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\AnalyticsTracker\Helpers;
+namespace realtydev\AnalyticsTracker\Helpers;
 
 class Url
 {

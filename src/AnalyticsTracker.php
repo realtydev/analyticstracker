@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\AnalyticsTracker;
+namespace realtydev\AnalyticsTracker;
 
-use Spatie\AnalyticsTracker\Helpers\Url;
+use realtydev\AnalyticsTracker\Helpers\Url;
 
 class AnalyticsTracker
 {

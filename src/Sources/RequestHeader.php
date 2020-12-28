@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\AnalyticsTracker\Sources;
+namespace realtydev\AnalyticsTracker\Sources;
 
 use Illuminate\Http\Request;
 

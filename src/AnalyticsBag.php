@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\AnalyticsTracker;
+namespace realtydev\AnalyticsTracker;
 
 use Illuminate\Contracts\Session\Session;
 use Illuminate\Http\Request;

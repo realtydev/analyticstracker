@@ -27,12 +27,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\AnalyticsTracker\\": "src"
+            "realtydev\\AnalyticsTracker\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\AnalyticsTracker\\Tests\\": "tests"
+            "realtydev\\AnalyticsTracker\\Tests\\": "tests"
         }
     },
     "scripts": {

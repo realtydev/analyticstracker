@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\AnalyticsTracker\Tests;
+namespace realtydev\AnalyticsTracker\Tests;
 
 use Orchestra\Testbench\TestCase as Orchestra;
-use Spatie\AnalyticsTracker\AnalyticsTrackerServiceProvider;
+use realtydev\AnalyticsTracker\AnalyticsTrackerServiceProvider;
 
 class TestCase extends Orchestra
 {

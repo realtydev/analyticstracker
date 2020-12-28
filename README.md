@@ -33,7 +33,7 @@ protected $middlewareGroups = [
         \Illuminate\Session\Middleware\StartSession::class,
         // ...
 
-        \Spatie\AnalyticsTracker\Middleware\TrackAnalyticsParametersMiddleware::class,
+        \realtydev\AnalyticsTracker\Middleware\TrackAnalyticsParametersMiddleware::class,
     ],
 ];
 ```
@@ -41,7 +41,7 @@ protected $middlewareGroups = [
 To configure the tracked parameters or how they're mapped on the URL parameters, you can publish the config file using:
 
 ```bash
-php artisan vendor:publish --provider="Spatie\AnalyticsTracker\AnalyticsTrackerServiceProvider"
+php artisan vendor:publish --provider="realtydev\AnalyticsTracker\AnalyticsTrackerServiceProvider"
 ```
 
 This is the contents of the published config file:
@@ -53,32 +53,32 @@ return [
      * the application. The configuration consists of the parameter's key and the
      * source to extract this key from.
      *
-     * Available sources can be found in the `\Spatie\AnalyticsTracker\Sources` namespace.
+     * Available sources can be found in the `\realtydev\AnalyticsTracker\Sources` namespace.
      */
     'tracked_parameters' => [
         [
             'key' => 'utm_source',
-            'source' => Spatie\AnalyticsTracker\Sources\RequestParameter::class,
+            'source' => realtydev\AnalyticsTracker\Sources\RequestParameter::class,
         ],
         [
             'key' => 'utm_medium',
-            'source' => Spatie\AnalyticsTracker\Sources\RequestParameter::class,
+            'source' => realtydev\AnalyticsTracker\Sources\RequestParameter::class,
         ],
         [
             'key' => 'utm_campaign',
-            'source' => Spatie\AnalyticsTracker\Sources\RequestParameter::class,
+            'source' => realtydev\AnalyticsTracker\Sources\RequestParameter::class,
         ],
         [
             'key' => 'utm_term',
-            'source' => Spatie\AnalyticsTracker\Sources\RequestParameter::class,
+            'source' => realtydev\AnalyticsTracker\Sources\RequestParameter::class,
         ],
         [
             'key' => 'utm_content',
-            'source' => Spatie\AnalyticsTracker\Sources\RequestParameter::class,
+            'source' => realtydev\AnalyticsTracker\Sources\RequestParameter::class,
         ],
         [
             'key' => 'referer',
-            'source' => Spatie\AnalyticsTracker\Sources\CrossOriginRequestHeader::class,
+            'source' => realtydev\AnalyticsTracker\Sources\CrossOriginRequestHeader::class,
         ],
     ],
 
@@ -109,7 +109,7 @@ return [
 The easiest way to retrieve the tracked parameters is by resolving the `TrackedAnalyticsParameters` class:
 
 ```php
-use Spatie\AnalyticsTracker\AnalyticsBag;
+use realtydev\AnalyticsTracker\AnalyticsBag;
 
 app(AnalyticsBag::class)->get(); // returns an array of tracked parameters
 ```
@@ -117,7 +117,7 @@ app(AnalyticsBag::class)->get(); // returns an array of tracked parameters
 You can also decorate an existing URL with the tracked parameters. This is useful to forward analytics to another domain you're running analytics on.
 
 ```blade
-<a href="{{ app(\Spatie\AnalyticsTracker\AnalyticsTracker::class)->decorateUrl('https://mywebshop.com/') }}">
+<a href="{{ app(\realtydev\AnalyticsTracker\AnalyticsTracker::class)->decorateUrl('https://mywebshop.com/') }}">
     Buy this product on our webshop
 </a>
 

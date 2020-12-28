@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\AnalyticsTracker\Tests\Sources;
+namespace realtydev\AnalyticsTracker\Tests\Sources;
 
 use Illuminate\Http\Request;
-use Spatie\AnalyticsTracker\Sources\CrossOriginRequestHeader;
-use Spatie\AnalyticsTracker\Tests\TestCase;
+use realtydev\AnalyticsTracker\Sources\CrossOriginRequestHeader;
+use realtydev\AnalyticsTracker\Tests\TestCase;
 
 class CrossOriginRequestHeaderTest extends TestCase
 {
