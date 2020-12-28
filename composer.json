@@ -1,5 +1,5 @@
 {
-    "name": "realtydev/laravel-analytics-tracker",
+    "name": "realtydev/AnalyticsTracker",
     "description": "Keeps track of the original UTM parameters",
     "keywords": [
         "realtydev",
